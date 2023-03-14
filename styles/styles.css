@@ -10,9 +10,10 @@
  * governing permissions and limitations under the License.
  */
 
+
  :root {
   /* colors */
-  --link-color: #035fe6;
+  --link-color: red;
   --link-hover-color: #136ff6;
   --background-color: #fff;
   --overlay-background-color: #eee;
@@ -20,35 +21,35 @@
   --text-color: #000;
 
   /* fonts */
-  --body-font-family: 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
+  --body-font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, Verdana, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font-family: var(--body-font-family);
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
   /* body sizes */
-  --body-font-size-m: 22px;
+  --body-font-size-m: .95rem;
   --body-font-size-s: 18px;
   --body-font-size-xs: 16px;
 
   /* heading sizes */
-  --heading-font-size-xxl: 48px;
+  --heading-font-size-xxl: .95rem;
   --heading-font-size-xl: 40px;
-  --heading-font-size-l: 32px;
-  --heading-font-size-m: 24px;
-  --heading-font-size-s: 20px;
+  --heading-font-size-l: .90rem;
+  --heading-font-size-m: .95rem;
+  --heading-font-size-s: .75rem;
   --heading-font-size-xs: 18px;
 
   /* nav height */
-  --nav-height: 64px;
+  --nav-height: 130px;
 
 }
 
 @media (min-width: 900px) {
   :root {
-    --heading-font-size-xxl: 60px;
+    --heading-font-size-xxl: .95rem;
     --heading-font-size-xl: 48px;
-    --heading-font-size-l: 36px;
-    --heading-font-size-m: 30px;
-    --heading-font-size-s: 24px;
+    --heading-font-size-l: .90rem;
+    --heading-font-size-m: .95rem;
+    --heading-font-size-s: .75rem;
     --heading-font-size-xs: 22px;
   }
 }
@@ -74,6 +75,14 @@ h4, h5, h6 {
   margin-top: 1em;
   margin-bottom: .5em;
   scroll-margin: calc(var(--nav-height) + 1em);
+}
+
+h3, h5 a {
+  color: red;
+}
+
+h4 {
+  color: #8c8c8c;
 }
 
 h1 { font-size: var(--heading-font-size-xxl) }
@@ -221,7 +230,7 @@ main .section {
 
 @media (min-width: 600px) {
   main .section {
-    padding: 64px 32px;
+    padding: 6px 3px;
   }
 }
 
@@ -229,6 +238,7 @@ main .section {
   .section > div {
     max-width: 1200px;
     margin: auto;
+    text-align: center;
   }
 }
 

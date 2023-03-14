@@ -4,6 +4,8 @@ header .nav-wrapper {
   width: 100%;
   z-index: 2;
   position: fixed;
+  border-top: 5px solid red;
+  border-bottom: 5px solid red;
 }
 
 header nav {
@@ -228,12 +230,15 @@ header nav .nav-sections ul > li > ul > li {
     gap: 2em;
     margin: 0;
     font-size: var(--body-font-size-xs);
+    align-items: center;
+    justify-content: center;
   }
 
   header nav .nav-sections > ul > li {
     flex: 0 1 auto;
     position: relative;
     font-weight: 500;
+    color: #8c8c8c;
   }
 
   header nav .nav-sections > ul > li > ul {
@@ -262,6 +267,7 @@ header nav .nav-sections ul > li > ul > li {
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
     border-bottom: 8px solid var(--highlight-background-color);
+    color: #8c8c8c;
   }
 
   header nav .nav-sections > ul > li > ul > li {
