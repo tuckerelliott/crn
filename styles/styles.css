@@ -87,6 +87,7 @@ h3 a, h5 a {
 h1 a {
   text-align: left;
   color: #000;
+  font-weight: bold;
 }
 
 h2 {
@@ -97,10 +98,6 @@ h2 {
   margin-bottom: 1rem;
 }
 
-h5 {
-  text-align: left;
-}
-
 h4 {
   color: #8c8c8c;
   border-top: 2px solid red;
@@ -109,12 +106,22 @@ h4 {
   text-align: center;
 }
 
+h5 {
+  text-align: left;
+}
+
+h6 {
+  font-size: .650rem;
+  font-weight: normal;
+  color: #5e5e5e;
+}
+
 h1 { font-size: var(--heading-font-size-xxl) }
 /* h2 { font-size: var(--heading-font-size-xl) } */
 h3 { font-size: var(--heading-font-size-l) }
 h4 { font-size: var(--heading-font-size-m) }
 h5 { font-size: var(--heading-font-size-s) }
-h6 { font-size: var(--heading-font-size-xs) }
+/* h6 { font-size: var(--heading-font-size-xs) } */
 
 p, dl, ol, ul, pre, blockquote {
   margin-top: 1em;
