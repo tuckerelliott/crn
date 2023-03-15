@@ -3,8 +3,8 @@ header .nav-wrapper {
   background-color: var(--background-color);
   width: 100%;
   z-index: 2;
-  position: fixed;
-  /* border-top: 4px solid red;
+  /* position: fixed;
+  border-top: 4px solid red;
   border-bottom: 4px solid red; */
 }
 
