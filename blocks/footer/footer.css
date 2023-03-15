@@ -46,14 +46,17 @@ footer .footer {
 footer ul {
   list-style: none;
   margin: 0;
-  padding-inline-start: 0;
+  padding-inline-start: 10;
+  align-items: center;
+  justify-content: center;
 }
 
 footer li {
   display: block;
   float: left;
   color: #202020;
-  font-size: 14px;
+  font-size: 1rem;
+  font-weight: 600;
   text-transform: uppercase;
   padding: 15px 17px;
   text-decoration: none;
