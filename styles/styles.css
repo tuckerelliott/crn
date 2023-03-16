@@ -15,7 +15,7 @@
  :root {
   /* colors */
   --link-color: red;
-  --link-hover-color: #136ff6;
+  --link-hover-color: red;
   --background-color: #fff;
   --overlay-background-color: #eee;
   --highlight-background-color: #ccc;
@@ -99,11 +99,15 @@ h2 {
 }
 
 h4 {
-  color: #8c8c8c;
+  color: red;
   border-top: 2px solid red;
   border-bottom: 2px solid gray;
   padding: 15px;
   text-align: center;
+}
+
+h4 a {
+  color: #8c8c8c;
 }
 
 h5 {
