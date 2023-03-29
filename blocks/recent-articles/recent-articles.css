@@ -1,7 +1,7 @@
 .recent-articles ul { display: flex;
     flex-flow: row wrap; list-style: none; margin: 0;
     padding: 0;
-    gap: 14px; }
+    gap: 14px; } 
 
 .recent-articles li { flex: 1 1 auto;
         max-width: 260px; }
