@@ -35,3 +35,6 @@ indices:
       description:
         select: head > meta[name="description"]
         value: attribute(el, "content")
+      author:
+        select: head > meta[name="author"]
+        value: attribute(el, "content")
