@@ -86,7 +86,7 @@ h3, h5 {
 
 h1 {
   text-align: left;
-  color: #000;
+  color: #000 !important;
   font-size: 1.750rem;
   font-weight: bold;
 }
