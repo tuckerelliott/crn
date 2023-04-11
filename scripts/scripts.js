@@ -20,7 +20,7 @@ window.hlx.RUM_GENERATION = 'project-1'; // add your RUM generation information 
  * Builds hero block and prepends to main in a new section.
  * @param {Element} main The container element
  */
-/*function buildHeroBlock(main) {
+function buildHeroBlock(main) {
   const h1 = main.querySelector('h1');
   const picture = main.querySelector('picture');
   // eslint-disable-next-line no-bitwise
@@ -30,14 +30,54 @@ window.hlx.RUM_GENERATION = 'project-1'; // add your RUM generation information 
     main.prepend(section);
   }
 }
-*/
+
+/**
+ * Builds heading block that takes metadata values and prepends to main in a new section.
+ * @param {Element} main The container element
+ */
+ function buildHeadingBlock(main) {
+  const title = document.querySelector('[property="og:title"]').content;
+  const desc = document.querySelector('[property="og:description"]').content;
+  const author = document.querySelector('[name="author"]').content;
+  const date = document.querySelector('[name="date"]').content;
+  const theme = document.querySelector('[name="theme"]').content;
+
+  console.log(theme);
+
+  const $pre = document.createElement('h3');
+  $pre.classList.add('pretitle');
+  $pre.textContent = theme;
+
+  const $h1 = document.createElement('h1');
+  $h1.textContent = title;
+
+  const $h5 = document.createElement('h5');
+  $h5.textContent = 'BY ' + author;
+
+  const $h6 = document.createElement('h6');
+  $h6.textContent = date;
+
+  const $p = document.createElement('p');
+  $p.textContent = desc;
+
+  const section = document.createElement('div');
+  section.append(buildBlock('heading', { elems: [$pre, $h1, $h5, $h6, $p] }));
+  main.prepend(section);
+
+ }
+
+
+
+
+
 /**
  * Builds all synthetic blocks in a container element.
  * @param {Element} main The container element
  */
-function buildAutoBlocks(main) {
+
+ function buildAutoBlocks(main) {
   try {
-    buildHeroBlock(main);
+    buildHeadingBlock(main);
   } catch (error) {
     // eslint-disable-next-line no-console
     console.error('Auto Blocking failed', error);

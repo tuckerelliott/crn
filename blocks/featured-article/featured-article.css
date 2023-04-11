@@ -10,7 +10,7 @@
 }
 
 .featured-article .image {
-    display: flex;
+    display: none;
     -webkit-box-orient: vertical;
     flex-direction: column;
     flex: 2;
@@ -34,14 +34,15 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    background-color: #ebebeb;
-    padding: 3.5em 2em 2em;
+    /* background-color: #ebebeb; */
+    /* padding: 3.5em 2em 2em; */
 }
 
 .featured-article .text p {
-    font-size: 14px;
+    font-size: 15px;
     margin: 0;
     line-height: 1.75;
+    font-style: italic;
 }
 
 .featured-article .text p.pretitle {

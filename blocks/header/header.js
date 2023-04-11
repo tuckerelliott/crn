@@ -1,5 +1,6 @@
 import { getMetadata, decorateIcons } from '../../scripts/lib-franklin.js';
 
+
 // media query match that indicates mobile/tablet width
 const isDesktop = window.matchMedia('(min-width: 900px)');
 

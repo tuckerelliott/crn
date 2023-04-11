@@ -118,6 +118,7 @@ h4 a {
 h5 {
   text-align: left;
   font-size: 0.750rem;
+  text-transform: uppercase;
 }
 
 h6 {
